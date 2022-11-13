@@ -1,0 +1,27 @@
+/* リセットCSS (ブラウザ特有のCSSを解除するためのCSS)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex; /*Flexboxの利用*/
+  justify-content: center; /*子要素の横並び・中央寄せ*/
+}
+
+/* headerクラス内にあるh1要素に対してのみ適応される */
+.header h1 {
+  font-size: 32px;
+}
+
+h1, h2 {
+  /* h1要素とh2要素の両方に適用される */
+}
+header>h1 {
+  /* header要素の直下にあるh1要素に適用される */
+}
+h1#header {
+  /* id名「header」のh1要素に適用される */
+}
+
